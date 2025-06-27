@@ -1,0 +1,104 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f8fafc; color: #1f2937;}
+.container {max-width: 1200px; margin: auto; padding: 0 20px;}
+
+/* Header Otimizado */
+header {background: linear-gradient(135deg, #2563eb, #10b981); padding: 15px 0; color: white; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+.header-content {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;}
+.logo {width: 280px; max-width: 100%; filter: brightness(1.2) contrast(1.3);}
+.cta-header {background: #f97316; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s ease; white-space: nowrap;}
+.cta-header:hover {background: #ea580c; transform: translateY(-2px);}
+
+/* Seções */
+section {padding: 60px 0;}
+
+/* Hero Otimizado */
+.hero {background: linear-gradient(135deg, #667eea, #764ba2); color: white; text-align: center; padding: 100px 20px 80px;}
+.hero h1 {font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 20px; font-weight: 900;}
+.hero p {font-size: clamp(1rem, 2.5vw, 1.2rem); max-width: 900px; margin: auto; line-height: 1.8;}
+.hero strong {color: #fbbf24;}
+
+/* Steps */
+.steps {background: #f0f4f8;}
+.steps h2 {text-align: center; margin-bottom: 50px; font-size: clamp(1.8rem, 4vw, 2.2rem);}
+.steps-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;}
+.step {background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s ease;}
+.step:hover {transform: translateY(-5px);}
+.step span {font-size: 3rem; display: block; margin-bottom: 15px;}
+.step h3 {margin: 15px 0; color: #1f2937; font-size: 1.4rem;}
+.step p {color: #6b7280; font-size: 1.1rem;}
+
+/* Seção de Exemplos de Documentos */
+.exemplos {background: white;}
+.exemplos h2 {text-align: center; margin-bottom: 20px; font-size: clamp(1.8rem, 4vw, 2.2rem);}
+.exemplos-subtitle {text-align: center; margin-bottom: 40px; color: #6b7280; font-size: 1.1rem;}
+.docs-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;}
+.doc-example {background: #f8fafc; border: 2px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center; transition: all 0.3s ease;}
+.doc-example:hover {border-color: #10b981; transform: translateY(-3px);}
+.doc-icon {font-size: 2.5rem; margin-bottom: 15px; color: #10b981;}
+.doc-title {font-weight: bold; margin-bottom: 8px; color: #1f2937;}
+.doc-client {color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;}
+.doc-date {color: #9ca3af; font-size: 0.8rem;}
+
+/* Preços Otimizado */
+.precos {background: linear-gradient(45deg, #f8fafc, #e5e7eb);}
+.precos h2 {text-align: center; margin-bottom: 20px; font-size: clamp(1.8rem, 4vw, 2.2rem);}
+.precos-subtitle {text-align: center; margin-bottom: 40px; color: #6b7280; font-size: 1.1rem;}
+.select-servico {max-width: 600px; margin: 0 auto;}
+.select-servico label {display: block; margin-bottom: 15px; font-weight: bold; color: #374151; font-size: 1.1rem;}
+.select-servico select {width: 100%; padding: 18px; font-size: 1.1rem; border: 2px solid #e5e7eb; border-radius: 12px; background: white; margin-bottom: 20px; transition: border-color 0.3s ease;}
+.select-servico select:focus {border-color: #10b981; outline: none;}
+#preco-exibido {font-size: 1.5rem; font-weight: bold; color: #10b981; opacity: 0; transition: opacity 0.3s ease; padding: 20px; background: linear-gradient(45deg, #f0fdf4, #dcfce7); border-radius: 12px; text-align: center;}
+
+/* Benefits */
+.benefits {background: #f8fafc;}
+.benefits h2 {text-align: center; margin-bottom: 20px; font-size: clamp(1.8rem, 4vw, 2.2rem);}
+.benefits-subtitle {text-align: center; margin-bottom: 40px; color: #6b7280; font-size: 1.1rem;}
+.benefits-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px;}
+.benefit {background: white; padding: 30px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s ease;}
+.benefit:hover {transform: translateY(-5px);}
+.benefit-icon {font-size: 2.5rem; color: #10b981; margin-bottom: 15px;}
+.benefit h3 {margin: 15px 0; color: #1f2937;}
+.benefit p {color: #6b7280;}
+
+/* FAQ */
+.faq-mini {background: white;}
+.faq-mini h3 {text-align: center; font-size: clamp(1.8rem, 4vw, 2rem); margin-bottom: 40px; color: #1f2937;}
+.faq-item {max-width: 800px; margin: 0 auto 20px; padding: 25px; background: #f8fafc; border-left: 4px solid #10b981; border-radius: 12px; transition: all 0.3s ease;}
+.faq-item:hover {background: #f0fdf4;}
+.faq-item strong {color: #1f2937; font-size: 1.1rem; display: block; margin-bottom: 8px;}
+.faq-item p {color: #6b7280; margin: 0;}
+
+/* CTA Final */
+.cta-section {background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 80px 0; text-align: center;}
+.cta-section h2 {font-size: clamp(1.8rem, 4vw, 2.4rem); margin-bottom: 30px; line-height: 1.3;}
+.cta-button {display: inline-flex; align-items: center; gap: 12px; background: #f97316; color: white; padding: 18px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; transition: all 0.3s ease; margin: 10px;}
+.cta-button:hover {background: #ea580c; transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0,0,0,0.2);}
+
+/* Footer */
+footer {background: #1f2937; color: white; padding: 50px 0 20px;}
+.footer-content {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px;}
+.footer-section h3 {color: #10b981; margin-bottom: 15px;}
+.footer-section ul {list-style: none; padding-left: 0;}
+.footer-section ul li {margin-bottom: 8px;}
+.footer-section a {color: #d1d5db; text-decoration: none; transition: color 0.3s ease;}
+.footer-section a:hover {color: #10b981;}
+.footer-bottom {text-align: center; padding-top: 20px; border-top: 1px solid #374151; font-size: 0.9rem; color: #9ca3af;}
+
+/* Responsividade Melhorada */
+@media (max-width: 768px) {
+  .header-content {justify-content: center; text-align: center;}
+  .logo {width: 240px;}
+  .hero {padding: 60px 20px 50px;}
+  section {padding: 40px 0;}
+  .steps-grid, .benefits-grid, .docs-grid {grid-template-columns: 1fr; gap: 20px;}
+  .footer-content {grid-template-columns: 1fr; text-align: center;}
+  .cta-button {width: 100%; max-width: 300px; justify-content: center;}
+}
+
+@media (max-width: 480px) {
+  .container {padding: 0 15px;}
+  .logo {width: 200px;}
+  .cta-header {padding: 10px 18px; font-size: 0.9rem;}
+  .step, .benefit, .doc-example {padding: 20px;}
+}
