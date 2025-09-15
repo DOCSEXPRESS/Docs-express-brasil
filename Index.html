@@ -1,295 +1,1536 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DOCS EXPRESS BRASIL - Documentos Rápidos e Seguros</title>
-  <meta name="description" content="Documentos rápidos, seguros e personalizados. Atendimento direto no WhatsApp com base no Código Civil Brasileiro.">
-  <meta property="og:title" content="DOCS EXPRESS BRASIL - Documentos em Poucas Horas">
-  <meta property="og:description" content="Reciba seu documento legal, rápido e seguro. Direto no seu WhatsApp.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📄</text></svg>" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Docs Express Brasil — Mais de 30 Documentos Personalizados no WhatsApp</title>
+  <meta name="description" content="A Docs Express Brasil oferece mais de 30 tipos de documentos jurídicos, incluindo contratos para imóveis e negócios, procurações, declarações e recibos. Tudo de forma rápida, segura e com base no Código Civil Brasileiro."/>
+  <meta name="keywords" content="documentos jurídicos, contratos, procuração, declaração, recibo, imóveis, negócios, família, compra e venda, locação, prestação de serviços, procuração particular, documentos online, Palmas, Tocantins, Brasil, docs express"/>
+    <link rel="icon" href="/favicon.ico">
+  <link rel="canonical" href="https://docsexpressbrasil.com.br/"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <meta property="og:title" content="Docs Express Brasil — Documentos Jurídicos Online" />
+  <meta property="og:description" content="São 30 opções de documentos; contratos, recibos, declarações e procurações, todos em conformidade com o Código Civil Brasileiro. Rápido, seguro e 100% online." />
+  <meta property="og:image" content="https://docsexpress.github.io/Docs-express-brasil/capa-docs-express.png" />
+  <meta property="og:url" content="https://docsexpress.github.io/Docs-express-brasil/" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Docs Express Brasil" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f8fafc;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #3b82f6, #10b981);
+      padding: 15px 0;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      width: 300px;
+      max-width: 100%;
+      filter: brightness(1.3) contrast(1.4);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-cta {
+      display: inline-block;
+      background-color: #f97316;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
+    }
+
+    .btn-cta:hover {
+      background-color: #ea580c;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(249, 115, 22, 0.6);
+    }
+
+    .btn-cta i.fa-brands.fa-whatsapp {
+      color: #25d366;
+      margin-right: 8px;
+    }
+
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #0077b6, #00b894);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 20px;
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.8;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      margin-bottom: 30px;
+    }
+
+    /* Seção de Como Funciona */
+    .steps-premium {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #3b82f6, #10b981);
+      position: relative;
+      overflow: hidden;
+      color: #ffffff;
+    }
+
+    .steps-premium-title-wrapper {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .steps-premium-title {
+      font-size: 3rem;
+      font-weight: 800;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+    }
+
+    .steps-premium-subtitle {
+      font-size: 1.2rem;
+      color: #e2e8f0;
+      max-width: 800px;
+      margin: 15px auto 0;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .steps-premium-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .step-premium-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 24px;
+      padding: 40px 30px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .step-premium-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .step-premium-emoji {
+      font-size: 3.5rem;
+      display: block;
+      margin-bottom: 20px;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .step-premium-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .step-premium-card p {
+      color: #e2e8f0;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    /* Origem da Empresa */
+    .origem-docs-express {
+      background-color: #FFF8DC;
+      padding: 50px 20px;
+    }
+
+    .origem-docs-express h3 {
+      color: #002F5F;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .origem-docs-express p {
+      color: #333333;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .origem-docs-express blockquote {
+      border-left: 4px solid #F57C00;
+      padding-left: 16px;
+      font-style: italic;
+      color: #002F5F;
+      font-size: 18px;
+      text-align: center;
+      background-color: #ffffffcc;
+      border-radius: 4px;
+      font-weight: 500;
+      margin-top: 40px;
+      margin-bottom: 1.5em;
+    }
+
+    /* Seção de Exemplos de Documentos */
+    .exemplos {
+      padding: 80px 0 0;
+      position: relative;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      z-index: 0;
+      clear: both;
+      overflow: hidden;
+    }
+
+    .exemplos::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 60% 40%, rgba(120, 119, 198, 0.3) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .exemplos-title-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titulo-secao {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+.titulo-secao i {
+  color: #ffffff;
+  background: none;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff;
+  margin-right: 15px;
+}
+
+.titulo-secao span {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #e2e8f0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+    @keyframes titleGlow {
+      0% {
+        text-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+      }
+      100% {
+        text-shadow: 0 4px 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    .exemplos-subtitle {
+      text-align: center;
+      font-size: 1.3rem;
+      color: #e2e8f0;
+      margin-bottom: 60px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+      font-weight: 400;
+      opacity: 0.9;
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .doc-example {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 40px 30px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 300px;
+    
+     text-align: center;}
+
+    
+    @keyframes slideInUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .doc-example:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 80px rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .doc-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      display: inline-block;
+      animation: float 3s ease-in-out infinite;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .doc-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 15px;
+      line-height: 1.3;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .doc-example p {
+      color: #e2e8f0;
+      font-size: 1rem;
+      line-height: 1.6;
+      opacity: 0.9;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .custom-docs-section {
+      margin-top: 60px;
+      position: relative;
+    }
+
+    .custom-docs-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+      backdrop-filter: blur(25px);
+      border-radius: 24px;
+      padding: 40px 50px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      text-align: center;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 120px;
+    }
+
+    .custom-docs-card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 80px rgba(255, 255, 255, 0.1);
+    }
+
+    .custom-docs-content {
+      flex: 1;
+      text-align: left;
+      padding-right: 30px;
+    }
+
+    .custom-docs-icon {
+      flex-shrink: 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .custom-docs-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 10px;
+      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #e2e8f0 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .custom-docs-text {
+      color: #e2e8f0;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    /* Tabela de Preços */
+    #tabela-precos {
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    }
+
+    #tabela-precos h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #1a237e;
+    }
+
+    p.subtitulo {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .accordion-item {
+      margin-bottom: 12px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background: #fff;
+    }
+
+    .accordion-header {
+  width: 100%;
+  text-align: left;
+  padding: 18px 20px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-header:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-header i {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-header i {
+  transform: rotate(180deg);
+}
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease;
+    }
+
+    .accordion-item.active .accordion-content {
+      max-height: 2000px;
+    }
+
+    .accordion-content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .price-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 15px;
+      border-bottom: 1px solid #fff;
+      border-radius: 0;
+    }
+
+    .price-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-text {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .item-text strong {
+      color: #1b5e20;
+      margin-left: 6px;
+    }
+
+    /* Cores das categorias */
+    .categoria-imoveis { background: #2e7d32; }
+    .categoria-familia { background: #1565c0; }
+    .categoria-negocios { background: #ef6c00; }
+    .categoria-dia { background: #6a1b9a; }
+
+    /* Tons pastéis dos itens */
+    .pastel-imoveis { background: #e8f5e9; }
+    .pastel-familia { background: #e3f2fd; }
+    .pastel-negocios { background: #fff3e0; }
+    .pastel-dia { background: #f3e5f5; }
+
+    /* Benefícios */
+    .benefits-premium {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%);
+      position: relative;
+      overflow: hidden;
+      color: #ffffff;
+    }
+
+    .benefits-premium-title-wrapper {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .benefits-premium-title-emoji {
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 10px;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .benefits-premium-title {
+      font-size: 3rem;
+      font-weight: 800;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #e2e8f0 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .benefits-premium-subtitle {
+      font-size: 1.2rem;
+      color: #e2e8f0;
+      max-width: 800px;
+      margin: 15px auto 0;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .benefits-premium-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+     align-items: stretch;
+    }
+
+    .benefit-premium-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 24px;
+      padding: 40px 30px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .benefit-premium-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+   .benefit-premium-icon i {
+     color: #f97316;
+     font-size: 2rem;
+    }
+
+    .benefit-premium-h3 { 
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 15px 0;
+    }
+
+    .benefit-premium-card p {
+      color: #e2e8f0;
+      font-size: 1rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    /* Conformidade Legal */
+    .conformidade-premium-wrapper {
+      padding: 0 0 100px;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%);
+      position: relative;
+      margin-top: -100px;
+      padding-top: 80px;
+    }
+
+    .conformidade-premium-card {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 24px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .conformidade-premium-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .conformidade-premium-icon i {
+      font-size: 2rem;
+      color: #f97316;
+      background: #fff3e6;
+      padding: 16px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .conformidade-premium-text h3 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .conformidade-premium-text p {
+      color: #e2e8f0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    /* FAQ */
+    .faq-premium {
+      padding: 100px 0;
+      background: #f8fafc;
+    }
+
+    .faq-premium-title-wrapper {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .faq-premium-title {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #1f2937;
+    }
+
+    .faq-accordion {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .faq-item-premium {
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .faq-item-premium[open] {
+      border-color: #3b82f6;
+    }
+
+    .faq-item-premium summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1f2937;
+      list-style: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .faq-item-premium summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item-premium summary:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-item-premium summary i {
+      color: #3b82f6;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item-premium[open] summary i {
+      transform: rotate(180deg);
+    }
+
+    .faq-item-premium p {
+      padding: 25px 40px 25px;
+      color: #6b7280;
+      line-height: 1.7;
+      margin: 0;
+      text-align: justify;
+    }
+
+    /* CTA Final */
+    .cta-section {
+      background: linear-gradient(135deg, #3b82f6, #10b981);
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .privacy-notice {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 20px;
+    }
+
+    .privacy-notice a {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+
+    .privacy-notice a:hover {
+      color: #e2e8f0;
+    }
+
+    
+    /* Footer */
+footer {
+  background: #1e3c72;
+  color: white; /* Garante que o branco seja a cor padrão */
+  padding: 50px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3,
+.footer-legal h3 {
+  color: #3b82f6; /* Define a cor azul para os títulos */
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul li,
+.footer-legal p,
+.footer-bottom {
+  color: white; /* Força a cor branca para todos os outros textos */
+}
+
+.footer-section a {
+  color: white; /* Força a cor branca para os links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-section a:hover {
+  color: #f8f8f8; /* Mude para um tom de branco mais suave ao passar o mouse */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-legal p {
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  text-align: center; /* Centraliza o texto de direitos autorais */
+  padding-top: 20px;
+  border-top: 1px solid #374151;
+  font-size: 0.9rem;
+}
+    @media (max-width: 768px) {
+      .header-content {
+        justify-content: center;
+        text-align: center;
+      }
+      .logo {
+        width: 240px;
+      }
+      .hero {
+        padding: 60px 20px 50px;
+      }
+      .docs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .doc-example {
+        min-height: auto;
+      
+  text-align: center;}
+      .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      #tabela-precos h2 {
+        font-size: 2rem;
+      }
+      .price-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .steps-premium-title {
+        font-size: 2.2rem;
+      }
+      .benefits-premium-title {
+        font-size: 2.2rem;
+      }
+      .custom-docs-card {
+        padding: 30px 20px;
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+      }
+      .custom-docs-content {
+        padding-right: 0;
+        padding-top: 20px;
+      }
+      .conformidade-premium-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 25px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 15px;
+      }
+      .logo {
+        width: 200px;
+      }
+      .exemplos h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Header -->
   <header>
     <div class="container header-content">
-      <!-- LOGO OFICIAL DOCS EXPRESS BRASIL - MAIOR E MAIS VISÍVEL -->
       <a href="/" class="logo" style="display: inline-block;">
-        <svg viewBox="0 0 320 90" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 320 90" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+          <title id="logoTitle">Logo da DOCS EXPRESS BRASIL</title>
           <defs>
-            <!-- Gradientes -->
             <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
               <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
             </linearGradient>
             <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
             </linearGradient>
             <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-              <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="rgba(0,0,0,0.3)"/>
+              <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="rgba(0,0,0,0.3)" />
             </filter>
           </defs>
-
-          <!-- Background do ícone - MAIOR -->
-          <rect x="10" y="10" width="60" height="60" rx="15" ry="15" fill="url(#primaryGradient)" filter="url(#shadow)"/>
-
-          <!-- Ícone do documento - MAIOR -->
+          <rect x="10" y="10" width="60" height="60" rx="15" ry="15" fill="url(#primaryGradient)" filter="url(#shadow)" />
           <g transform="translate(25, 22)">
-            <rect x="2" y="4" width="25" height="32" rx="3" ry="3" fill="white" opacity="0.95"/>
-            <polygon points="22,4 22,12 27,12" fill="white" opacity="0.7"/>
-            <rect x="6" y="12" width="15" height="2" rx="1" fill="url(#primaryGradient)" opacity="0.6"/>
-            <rect x="6" y="16" width="11" height="2" rx="1" fill="url(#primaryGradient)" opacity="0.4"/>
-            <rect x="6" y="20" width="13" height="2" rx="1" fill="url(#primaryGradient)" opacity="0.4"/>
-            <rect x="6" y="24" width="9" height="2" rx="1" fill="url(#primaryGradient)" opacity="0.4"/>
-            <circle cx="23" cy="30" r="5" fill="url(#accentGradient)"/>
+            <rect x="2" y="4" width="25" height="32" rx="3" ry="3" fill="white" opacity="0.95" />
+            <polygon points="22,4 22,12 27,12" fill="white" opacity="0.7" />
+            <rect x="6" y="12" width="15" height="2" rx="1" fill="url(#primaryGradient)" opacity="0.6" />
+            <rect x="6" y="16" width="11" height="2" rx="1" fill="url(#primaryGradient)" opacity="0.4" />
+            <rect x="6" y="20" width="13" height="2" rx="1" fill="url(#primaryGradient)" opacity="0.4" />
+            <rect x="6" y="24" width="9" height="2" rx="1" fill="url(#primaryGradient)" opacity="0.4" />
+            <circle cx="23" cy="30" r="5" fill="url(#accentGradient)" />
             <text x="23" y="33" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="white">⚡</text>
           </g>
-
-          <!-- Texto DOCS - MAIOR -->
           <text x="85" y="35" font-family="Arial Black, sans-serif" font-size="26" font-weight="900" fill="white" filter="url(#shadow)">DOCS</text>
-          <!-- Texto EXPRESS - MAIOR -->
-          <text x="85" y="58" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#fbbf24">EXPRESS</text>
-          <!-- Texto BRASIL - MAIOR -->
-          <text x="200" y="58" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#f97316">BRASIL</text>
-
-          <!-- Velocidade - MAIOR -->
+          <text x="85" y="58" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#f59e0b">EXPRESS</text>
+          <text x="200" y="58" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#F57C00">BRASIL</text>
           <g transform="translate(260, 25)">
-            <path d="M0,12 L10,6 L10,10 L18,10 L18,15 L10,15 L10,18 Z" fill="#fbbf24" opacity="0.8"/>
-            <path d="M4,18 L14,12 L14,16 L22,16 L22,21 L14,21 L14,24 Z" fill="#fbbf24" opacity="0.6"/>
-            <path d="M8,24 L18,18 L18,22 L26,22 L26,27 L18,27 L18,30 Z" fill="#fbbf24" opacity="0.4"/>
+            <path d="M0,12 L10,6 L10,10 L18,10 L18,15 L10,15 L10,18 Z" fill="#f59e0b" opacity="0.8" />
+            <path d="M4,18 L14,12 L14,16 L22,16 L22,21 L14,21 L14,24 Z" fill="#f59e0b" opacity="0.6" />
+            <path d="M8,24 L18,18 L18,22 L26,22 L26,27 L18,27 L18,30 Z" fill="#f59e0b" opacity="0.4" />
           </g>
         </svg>
-      </a>
-      <a href="https://wa.me/5563991112959" class="cta-header"><i class="fab fa-whatsapp"></i> Solicitar Agora</a>
+
+           <a href="https://wa.me/5563991112959?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20documento."
+              class="btn-cta" target="_blank" rel="noopener noreferrer" aria-label="Solicitar documento via WhatsApp">
+             <i class="fa-brands fa-whatsapp"></i> Solicitar Agora
+           </a>
+
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
+  <div class="container">
+   <h1>Precisa de um documento com urgência e segurança?</h1>
+   <p>
+     Receba seu documento legal com rapidez e segurança, direto no WhatsApp.<br>
+     São<strong> 30 opções de documentos; contratos, recibos, declarações e procurações</strong> todos em conformidade, com o Código Civil Brasileiro.<br>
+     Simples, confiável e entregue em minutos. 👉 <strong>Solicite agora e receba o seu!</strong>
+    </p>
+    <a href="https://wa.me/+5563991112959?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20documento." 
+      class="btn-cta" target="_blank" rel="noopener noreferrer" aria-label="Solicitar documento via WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i> Solicitar Agora
+    </a>
+  </div>
+</section>
+
+
+  <section class="steps-premium">
     <div class="container">
-      <h1>Precisa de um documento com urgência e segurança?</h1>
-      <p>Receba seu documento legal, rápido e seguro. Direto no seu WhatsApp.<br>
-      Documentos sob medida: contratos, recibos, declarações e procurações conforme o Código Civil Brasileiro.<br>
-      Já entregamos <strong>2.847 documentos</strong> para <strong>1.230+ clientes</strong>.</p>
-    </div>
-  </section>
+      <div class="steps-premium-title-wrapper">
+        <h2 class="steps-premium-title">📋 Como funciona em 3 passos simples</h2>
+        <p class="steps-premium-subtitle">Nosso processo foi desenhado para ser rápido, intuitivo e totalmente digital.</p>
+      </div>
 
-  <!-- 3 Passos -->
-  <section class="steps container">
-    <h2>📋 Como funciona em 3 passos simples</h2>
-    <div class="steps-grid">
-      <div class="step">
-        <span>1️⃣</span>
-        <h3>Tire uma foto</h3>
-        <p>Envie uma foto ou mensagem explicando o que precisa.</p>
-      </div>
-      <div class="step">
-        <span>2️⃣</span>
-        <h3>Nossa equipe interpreta</h3>
-        <p>Transformamos sua mensagem em documento legal.</p>
-      </div>
-      <div class="step">
-        <span>3️⃣</span>
-        <h3>Você aprova e recebe</h3>
-        <p>Você aprova e recebe o documento pronto no WhatsApp. É só imprimir e assinar.</p>
+      <div class="steps-premium-grid">
+        <div class="step-premium-card">
+          <span class="step-premium-emoji">1️⃣</span>
+          <h3>Tire uma foto</h3>
+          <p>Envie uma foto do seu documento ou uma mensagem explicando o que você precisa.</p>
+        </div>
+        <div class="step-premium-card">
+          <span class="step-premium-emoji">2️⃣</span>
+          <h3>Nossa equipe interpreta</h3>
+          <p>Nossos especialistas transformam sua solicitação em um documento legalmente robusto.</p>
+        </div>
+        <div class="step-premium-card">
+          <span class="step-premium-emoji">3️⃣</span>
+          <h3>Você aprova e recebe</h3>
+          <p>Enviamos uma prévia para sua aprovação. Após o "ok", você recebe o documento final no WhatsApp.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Seção de Exemplos de Documentos -->
-  <section class="exemplos">
+  <section class="origem-docs-express">
+    <div class="container">       
+    <h3>📜 Eficiência que Gera Confiança</h3>       
+    <p>Num sábado um cliente advogado — proprietário de imóveis em Palmas — recebeu uma notificação urgente da prefeitura sobre o <strong style="color: #F57C00;">REFIS</strong>. O prazo encerrava no domingo, mas havia um desafio: ele estava em uma fazenda no interior de Goiás, com acesso apenas ao celular.</p>       
+    <p>O que estava em jogo não era apenas uma questão burocrática, mas uma <strong style="color: #F57C00;">corrida contra o tempo</strong> para regularizar sua situação tributária com condições únicas do REFIS — garantindo uma economia de <strong style="color: #F57C00;">R$ 4.153,00</strong>.</p>       
+    <p>Com a experiência de quem atua há <strong style="color: #F57C00;">25 anos</strong> com documentação personalizada, pensei bem além do problema. Solicitei os dados dele e a imagem da notificação. Em menos de 30 minutos, a <strong style="color: #F57C00;">procuração particular</strong> estava pronta, assinada digitalmente — e a representação na prefeitura foi concluída com sucesso.</p>       
+    <p>Foi nesse momento que nasceu a <strong style="color: #F57C00;">Docs Express Brasil</strong>. E a pergunta que nos guia até hoje é simples e poderosa:</p>       
+    <blockquote>
+    "Afinal, quanto vale para você nunca mais perder uma oportunidade por falta de agilidade documental?"
+    </blockquote>
+    <p>Pesquisamos todas as possibilidades para agilizar ao máximo o processo de elaboração de documentos legais, de forma rápida e com o mínimo de burocracia possível.</p>
+    <p>Nossa equipe é formada por profissionais especializados em Direito Imobiliário e Direito Civil, atentos a todas as disposições do Código Civil Brasileiro, garantindo serviços simples, ágeis e totalmente amparados pela lei.</p>       
+    <p>Nosso compromisso é transformar distâncias em oportunidades e urgência em confiança — conectando pessoas às soluções de que precisam com agilidade, humanidade e segurança.</p>       
+    <blockquote>
+    "Precisa de um documento com urgência e total segurança? Fale conosco agora."
+    </blockquote>     
+    </div>
+  </section>
+<section class="exemplos">
+  <div class="container">
+    <div class="exemplos-title-wrapper">
+      <h2 class="titulo-secao">
+      <i class="fa-solid fa-file-lines"></i>
+     <span>Documentos Mais Pedidos</span>
+    </h2>
+    </div>
+    <p class="exemplos-subtitle">Documentos personalizados com base no Código Civil Brasileiro, prontos para impressão e assinatura.</p>
+    <div class="docs-grid">
+      <div class="doc-example">
+        <div class="doc-icon">🏘️</div>
+        <div class="doc-title">Contrato de Compra e Venda de Imóvel</div>
+        <p>Elaboramos seu contrato de compra e venda com agilidade e segurança jurídica.</p>
+        <a href="https://wa.me/5563991112959?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20Contrato%20de%20Compra%20e%20Venda%20de%20Im%C3%B3vel" class="btn-cta" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Contrato de Compra e Venda via WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> Solicitar Agora
+        </a>
+      </div>
+      <div class="doc-example">
+        <div class="doc-icon">🏡</div>
+        <div class="doc-title">Contrato de Locação Residencial</div>
+        <p>Tenha seu contrato de locação residencial personalizado, claro e legalmente válido.</p>
+        <a href="https://wa.me/5563991112959?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20Contrato%20de%20Loca%C3%A7%C3%A3o%20Residencial." class="btn-cta" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Contrato de Locação via WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> Solicitar Agora
+        </a>
+      </div>
+      <div class="doc-example">
+        <div class="doc-icon">✍️</div>
+        <div class="doc-title">Contrato de Prestação de Serviços</div>
+        <p>Crie seu contrato de prestação de serviços com cláusulas essenciais e objetividade.</p>
+        <a href="https://wa.me/5563991112959?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20Contrato%20de%20Presta%C3%A7%C3%A3o%20de%20Servi%C3%A7os." class="btn-cta" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Contrato de Prestação de Serviços via WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> Solicitar Agora
+        </a>
+      </div>
+      <div class="doc-example">
+        <div class="doc-icon">📄</div>
+        <div class="doc-title">Procuração Particular</div>
+        <p>Sua procuração particular elaborada de forma rápida para diversos atos e finalidades.</p>
+        <a href="https://wa.me/5563991112959?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20Procura%C3%A7%C3%A3o%20Particular." class="btn-cta" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Procuração Particular via WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> Solicitar Agora
+        </a>
+      </div>
+      <div class="doc-example">
+        <div class="doc-icon">🏠</div>
+        <div class="doc-title">Declaração de Residência</div>
+        <p>Emita sua declaração de residência de forma simples e descomplicada.</p>
+        <a href="https://wa.me/5563991112959?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20Declara%C3%A7%C3%A3o%20de%20Resid%C3%AAncia." class="btn-cta" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Declaração de Residência via WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> Solicitar Agora
+        </a>
+      </div>
+      <div class="doc-example">
+        <div class="doc-icon">🧾</div>
+        <div class="doc-title">Recibo de Pagamento</div>
+        <p>Geramos seu recibo de pagamento com clareza para comprovação e controle financeiro.</p>
+        <a href="https://wa.me/5563991112959?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20Recibo%20de%20Pagamento." class="btn-cta" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Recibo de Pagamento via WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> Solicitar Agora
+        </a>
+      </div>
+      </div>
+    <div class="custom-docs-section">
+      <div class="custom-docs-card">
+        <div class="custom-docs-content">
+          <h3 class="custom-docs-title">Documentos Personalizados</h3>
+          <p class="custom-docs-text">Precisa de um documento específico que não está na tabela abaixo? Nossa equipe especializada pode elaborar contratos e documentos sob medida para suas necessidades.</p>
+          <a href="https://wa.me/5563991112959?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20documento%20personalizado." class="btn-cta" target="_blank" rel="noopener noreferrer" aria-label="Solicitar documento personalizado via WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i> Solicitar Agora
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tabela-precos">
     <div class="container">
-      <h2>📄 Exemplos de Documentos Entregues</h2>
-      <p class="exemplos-subtitle">Veja alguns dos documentos que já elaboramos para nossos clientes</p>
-      
-      <div class="docs-grid">
-        <div class="doc-example">
-          <div class="doc-icon">📋</div>
-          <div class="doc-title">Contrato de Prestação de Serviços</div>
-          <div class="doc-client">Cliente: Maria S. - Palmas/TO</div>
-          <div class="doc-date">Entregue em: Janeiro 2025</div>
+      <h2>📊 Tabela de Preços por Categoria</h2>
+      <p class="subtitulo">Clique em uma categoria para visualizar os documentos e solicitar no WhatsApp.</p>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header categoria-imoveis">
+            <span>🏡 Imóveis — a partir de R$157,00</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <ul>
+              <li class="price-item pastel-imoveis">
+                <span class="item-text">1. Contrato de Promessa de Compra e Venda de Imóvel — <strong>R$ 447,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Promessa%20de%20Compra%20e%20Venda%20de%20Im%C3%B3vel" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-imoveis">
+                <span class="item-text">2. Contrato de Locação Residencial — <strong>R$ 257,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Loca%C3%A7%C3%A3o%20Residencial" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-imoveis">
+                <span class="item-text">3. Distrato de Locação — <strong>R$ 157,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Distrato%20de%20Loca%C3%A7%C3%A3o" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-imoveis">
+                <span class="item-text">4. Contrato de Locação Comercial — <strong>R$ 297,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Loca%C3%A7%C3%A3o%20Comercial" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-imoveis">
+                <span class="item-text">5. Contrato de Arrendamento de Imóvel Rural — <strong>R$ 587,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Arrendamento%20de%20Im%C3%B3vel%20Rural" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-imoveis">
+                <span class="item-text">6. Laudo de Avaliação de Imóvel Urbano — <strong>R$ 357,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Laudo%20de%20Avalia%C3%A7%C3%A3o%20de%20Im%C3%B3vel%20Urbano" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        
-        <div class="doc-example">
-          <div class="doc-icon">🏠</div>
-          <div class="doc-title">Declaração de Residência</div>
-          <div class="doc-client">Cliente: João P. - Araguaína/TO</div>
-          <div class="doc-date">Entregue em: Janeiro 2025</div>
+
+        <div class="accordion-item">
+          <button class="accordion-header categoria-familia">
+            <span>👨‍👩‍👧‍👦 Família — a partir de R$47,00</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <ul>
+              <li class="price-item pastel-familia">
+                <span class="item-text">7. Declaração de União Estável — <strong>R$ 157,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Declara%C3%A7%C3%A3o%20de%20Uni%C3%A3o%20Est%C3%A1vel" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-familia">
+                <span class="item-text">8. Autorização de Viagem para Menores — <strong>R$ 47,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Autoriza%C3%A7%C3%A3o%20de%20Viagem%20para%20Menores" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-familia">
+                <span class="item-text">9. Cessão de Direitos Hereditários — <strong>R$ 297,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Cess%C3%A3o%20de%20Direitos%20Heredit%C3%A1rios" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        
-        <div class="doc-example">
-          <div class="doc-icon">📄</div>
-          <div class="doc-title">Procuração Particular</div>
-          <div class="doc-client">Cliente: Ana C. - Gurupi/TO</div>
-          <div class="doc-date">Entregue em: Janeiro 2025</div>
+
+        <div class="accordion-item">
+          <button class="accordion-header categoria-negocios">
+            <span>💼 Negócios — a partir de R$117,00</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <ul>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">10. Contrato de Prestação de Serviços — <strong>R$ 257,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Presta%C3%A7%C3%A3o%20de%20Servi%C3%A7os" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">11. Contrato de Parceria Comercial — <strong>R$ 357,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Parceria%20Comercial" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">12. Contrato de Compra e Venda de Veículo — <strong>R$ 157,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Compra%20e%20Venda%20de%20Ve%C3%ADculo" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">13. Contrato de Aluguel de Veículos — <strong>R$ 187,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Aluguel%20de%20Ve%C3%ADculos" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">14. Distrato de Compra e Venda de Veículo — <strong>R$ 117,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Distrato%20de%20Compra%20e%20Venda%20de%C3%ADculo" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">15. Contrato de Compra e Venda de Equipamentos — <strong>R$ 357,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Compra%20e%20Venda%20de%20Equipamentos" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">16. Contrato de Locação de Equipamentos — <strong>R$ 357,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Loca%C3%A7%C3%A3o%20de%20Equipamentos" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">17. Acordo de Confidencialidade (NDA) — <strong>R$ 227,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Acordo%20de%20Confidencialidade%20(NDA)" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">18. Contrato de Empréstimo entre Empresas ou Sócios — <strong>R$ 327,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Empr%C3%A9stimo%20entre%20Empresas%20ou%20S%C3%B3cios" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">19. Contrato de Cessão de Quotas Sociais (LTDA) — <strong>R$ 427,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Cess%C3%A3o%20de%20Quotas%20Sociais%20(LTDA)" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-negocios">
+                <span class="item-text">20. Aditivo de Contrato (Geral) — <strong>R$ 127,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Aditivo%20de%20Contrato%20(Geral)" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        
-        <div class="doc-example">
-          <div class="doc-icon">🏘️</div>
-          <div class="doc-title">Contrato de Locação</div>
-          <div class="doc-client">Cliente: Carlos M. - Palmas/TO</div>
-          <div class="doc-date">Entregue em: Dezembro 2024</div>
-        </div>
-        
-        <div class="doc-example">
-          <div class="doc-icon">💰</div>
-          <div class="doc-title">Recibo de Pagamento</div>
-          <div class="doc-client">Cliente: Fernanda L. - Porto Nacional/TO</div>
-          <div class="doc-date">Entregue em: Dezembro 2024</div>
-        </div>
-        
-        <div class="doc-example">
-          <div class="doc-icon">📑</div>
-          <div class="doc-title">Declaração Personalizada</div>
-          <div class="doc-client">Cliente: Roberto D. - Miracema/TO</div>
-          <div class="doc-date">Entregue em: Dezembro 2024</div>
+
+        <div class="accordion-item">
+          <button class="accordion-header categoria-dia">
+            <span>📄 Dia a Dia — a partir de R$47,00</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <ul>
+              <li class="price-item pastel-dia">
+                <span class="item-text">21. Procuração Particular — <strong>R$ 77,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Procura%C3%A7%C3%A3o%20Particular" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-dia">
+                <span class="item-text">22. Termo de Doação de Bens ou Valores — <strong>R$ 157,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Termo%20de%20Doa%C3%A7%C3%A3o%20de%20Bens%20ou%20Valores" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-dia">
+                <span class="item-text">23. Contrato de Empréstimo Pessoal (Dinheiro) — <strong>R$ 97,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Contrato%20de%20Empr%C3%A9stimo%20Pessoal%20(Dinheiro)" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-dia">
+                <span class="item-text">24. Termo de Confissão e Parcelamento de Dívida — <strong>R$ 127,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Termo%20de%20Confiss%C3%A3o%20e%20Parcelamento%20de%20D%C3%ADvida" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-dia">
+                <span class="item-text">25. Carta de Reclamação de Produto com Defeito — <strong>R$ 47,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Carta%20de%20Reclama%C3%A7%C3%A3o%20de%20Produto%20com%20Defeito" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-dia">
+                <span class="item-text">26. Declaração de Endereço Residencial — <strong>R$ 47,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Declara%C3%A7%C3%A3o%20de%20Endere%C3%A7o%20Residencial" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-dia">
+                <span class="item-text">27. Recibo de Pagamento Simples — <strong>R$ 47,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Recibo%20de%20Pagamento%20Simples" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-dia">
+                <span class="item-text">28. Notificação Extrajudicial — <strong>R$ 197,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Notifica%C3%A7%C3%A3o%20Extrajudicial" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-dia">
+                <span class="item-text">29. Termo de Acordo Extrajudicial — <strong>R$ 257,00</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Termo%20de%20Acordo%20Extrajudicial" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+              <li class="price-item pastel-dia">
+                <span class="item-text">30. Documentos Personalizados — <strong>Orçamento Gratuito</strong></span>
+                <a href="https://wa.me/5563991112959?text=Ol%C3%A1%2C%20quero%20solicitar%20Documento%20Personalizado" class="btn-cta" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i>Solicitar Agora
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
 
-  <!-- Seção de Preços -->
-  <section class="precos">
+  <section class="benefits-premium">
     <div class="container">
-      <h2>💰 Tabela de Serviços</h2>
-      <p class="precos-subtitle">Documentos prontos, revisados tecnicamente e entregues em até 24h.</p>
+      <div class="benefits-premium-title-wrapper">
+        <span class="benefits-premium-title-emoji">✨</span>
+        <h2 class="benefits-premium-title">Por que somos sua melhor escolha?</h2>
+        <p class="benefits-premium-subtitle">Rápido, seguro e sem burocracia. Documentos prontos em minutos, direto no WhatsApp.</p>
+      </div>
 
-      <div class="select-servico">
-        <label for="seletor-documento">🔍 Selecione um serviço:</label>
-        <select id="seletor-documento">
-          <option value="">Escolha abaixo...</option>
-          <option value="R$ 17,00">📃 Recibo de Pagamento</option>
-          <option value="R$ 27,00">🏠 Declaração de Residência</option>
-          <option value="R$ 57,00">📄 Procuração Particular</option>
-          <option value="R$ 97,00">✍️ Contrato de Prestação de Serviços</option>
-          <option value="R$ 297,00">🏡 Contrato de Locação Residencial</option>
-          <option value="Orçamento gratuito">🏘️ Contrato de Compra e Venda de Imóveis</option>
-          <option value="Orçamento gratuito">📑 Outros Documentos Específicos</option>
-        </select>
+      <div class="benefits-premium-grid">
+        <div class="benefit-premium-card">
+          <div class="benefit-premium-icon"><i class="fas fa-bolt"></i></div>
+          <h3 class="benefit-premium-h3">Rapidez Incrível</h3>
+          <p>Documentos entregues em minutos, sem burocracia.</p>
+        </div>
 
-        <div id="preco-exibido"></div>
+        <div class="benefit-premium-card">
+          <div class="benefit-premium-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3 class="benefit-premium-h3">Confiabilidade Legal</h3>
+          <p>Baseados no Código Civil Brasileiro e com validação técnica.</p>
+        </div>
 
-        <p style="margin-top: 20px; font-size: 0.95rem; color: #6b7280; text-align: center;">
-          📌 Os valores são fixos para os modelos padrões.<br>
-          Precisa de algo mais específico ou detalhado? Solicite um orçamento gratuito diretamente no WhatsApp.
-        </p>
+        <div class="benefit-premium-card">
+          <div class="benefit-premium-icon"><i class="fas fa-mobile"></i></div>
+          <h3 class="benefit-premium-h3">Atendimento Digital</h3>
+          <p>Tudo pelo WhatsApp, de forma simples e conveniente.</p>
+        </div>
+
+        <div class="benefit-premium-card">
+          <div class="benefit-premium-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+          <h3 class="benefit-premium-h3">Preço Acessível</h3>
+          <p>Soluções sob demanda com custos que cabem no seu bolso.</p>
+        </div>
+
+        <div class="benefit-premium-card">
+          <div class="benefit-premium-icon"><i class="fas fa-users"></i></div>
+          <h3 class="benefit-premium-h3">Personalização Total</h3>
+          <p>Documentos adaptados à sua realidade e objetivos.</p>
+        </div>
+
+        <div class="benefit-premium-card">
+          <div class="benefit-premium-icon"><i class="fas fa-headset"></i></div>
+          <h3 class="benefit-premium-h3">Suporte Humanizado</h3>
+          <p>Equipe pronta para tirar dúvidas e acompanhar você.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Seção de Benefícios -->
-  <section class="benefits">
+  <section class="conformidade-premium-wrapper">
     <div class="container">
-      <h2>Por que escolher a DOCS EXPRESS?</h2>
-      <p class="benefits-subtitle">⚡ Rápido, seguro e sem burocracia. 📲 Tudo direto pelo celular.</p>
-
-      <div class="benefits-grid">
-        <div class="benefit">
-          <div class="benefit-icon">⚡</div>
-          <h3>Rapidez Real</h3>
-          <p>Entregamos em poucas horas com base nas normas do Código Civil e validação profissional.</p>
+      <div class="conformidade-premium-card">
+        <div class="conformidade-premium-icon">
+          <i class="fas fa-gavel"></i>
         </div>
-
-        <div class="benefit">
-          <div class="benefit-icon">🔒</div>
-          <h3>Privacidade Garantida</h3>
-          <p>Seus dados são tratados com segurança e sigilo absoluto.</p>
-        </div>
-
-        <div class="benefit">
-          <div class="benefit-icon">📜</div>
-          <h3>Conformidade Legal</h3>
-          <p>Elaborados em conformidade com o Código Civil Brasileiro.</p>
-        </div>
-
-        <div class="benefit">
-          <div class="benefit-icon">📲</div>
-          <h3>Zero Burocracia</h3>
-          <p>Sem formulários. Sem complicação. Tudo direto pelo celular.</p>
+        <div class="conformidade-premium-text">
+          <h3>Conformidade Legal Assegurada</h3>
+          <p>Nossos documentos são estruturados com base na legislação vigente, garantindo sua validade e protegendo seus interesses.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ – Dúvidas Rápidas -->
-  <section class="faq-mini">
+  <section class="faq-premium">
     <div class="container">
-      <h3>❓ Dúvidas Rápidas</h3>
-
-      <div class="faq-item">
-        <strong>É seguro enviar meus documentos?</strong>
-        <p>Sim! Tratamos tudo com sigilo absoluto e deletamos após a entrega.</p>
+      <div class="faq-premium-title-wrapper">
+        <h2 class="faq-premium-title">❓ Dúvidas Rápidas</h2>
       </div>
 
-      <div class="faq-item">
-        <strong>O documento tem valor legal?</strong>
-        <p>Sim! Estruturamos com base técnica e nas normas do Código Civil.</p>
-      </div>
+      <div class="faq-accordion">
 
-      <div class="faq-item">
-        <strong>E se eu não gostar do resultado?</strong>
-        <p>Você aprova o documento antes de finalizar.</p>
+        <details class="faq-item-premium">
+          <summary>
+            <span>1. A Docs Express Brasil oferece assessoria jurídica?</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <p>Não. A Docs Express Brasil elabora exclusivamente documentos personalizados, sem prestar assessoria jurídica. A responsabilidade pelas informações e utilização dos documentos é integralmente do cliente. Recomendamos consultar um advogado quando necessário.</p>
+        </details>
+
+        <details class="faq-item-premium">
+          <summary>
+            <span>2. Como funciona o processo?</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <p>Você envia sua solicitação por escrito ou uma foto pelo WhatsApp, nossa equipe interpreta a necessidade, elabora o documento e você o recebe pronto para aprovar, imprimir e assinar.</p>
+        </details>
+
+        <details class="faq-item-premium">
+          <summary>
+            <span>3. Quanto tempo leva para receber o documento?</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <p>A maioria dos documentos é entregue em poucos minutos após a solicitação e aprovação do pedido.</p>
+        </details>
+
+        <details class="faq-item-premium">
+          <summary>
+            <span>4. Os documentos são válidos legalmente?</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <p>Sim! Todos os nossos documentos são elaborados com base no Código Civil Brasileiro e possuem validação técnica responsável, garantindo sua legalidade.</p>
+        </details>
+
+        <details class="faq-item-premium">
+          <summary>
+            <span>5. E se eu não gostar do resultado?</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <p>Sua tranquilidade é fundamental. Você sempre recebe uma versão prévia do documento para aprovação. Só finalizamos e enviamos a versão definitiva após o seu "ok", garantindo que o resultado atenda exatamente às suas expectativas.</p>
+        </details>
+        
+        <details class="faq-item-premium">
+          <summary>
+            <span>6. Posso solicitar um documento que não está na lista?</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <p>Sim! Elaboramos outros tipos de documentos. Basta enviar sua solicitação pelo WhatsApp e nossa equipe preparará exatamente o que você precisa, com agilidade e segurança.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- Chamada para Ação Final -->
   <section class="cta-section">
     <div class="container">
-      <h2>📲 Resolva agora pelo WhatsApp. Documento pronto em poucas horas.</h2>
-      <a href="https://wa.me/5563991112959?text=Olá! Gostaria de solicitar um documento." class="cta-button">
-        <i class="fab fa-whatsapp"></i> Começar Agora no WhatsApp
+      <h2>Pronto para ter seu documento legal<br>sem burocracia?</h2>
+      <a href="https://wa.me/5563991112959?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20documento."
+        class="btn-cta" target="_blank" rel="noopener noreferrer" aria-label="Solicitar documento via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i> Solicitar meu Documento Agora
       </a>
-      <p style="font-size: 0.85rem; color: #d1fae5; margin-top: 15px;">
-        🔒 Ao continuar, você aceita nossa <a href="#politica" style="color: #fff; text-decoration: underline;">Política de Privacidade</a>.
+      <p class="privacy-notice">
+        🔒 Ao continuar, você aceita nossa 
+        <a href="https://drive.google.com/file/d/12uSSNW8IiHSXiZ0qfJw0eMZZvz79HFMz/view?usp=drivesdk" target="_blank"
+          rel="noopener noreferrer">Política de Privacidade</a>.
       </p>
     </div>
   </section>
 
-  <!-- Rodapé -->
   <footer>
-    <div class="container">
-      <div class="footer-content">
-        <!-- Descrição -->
-        <div class="footer-section">
-          <h3>DOCS EXPRESS BRASIL</h3>
-          <p>Documentos personalizados com agilidade e precisão. Entregues com segurança, clareza e atendimento direto pelo WhatsApp — tudo em conformidade com o Código Civil Brasileiro.</p>
-          <p style="margin-top: 10px; font-size: 0.9rem; color: #9ca3af;">🔧 Estamos em constante evolução — sua experiência e feedback orientam cada melhoria que fazemos.</p>
-        </div>
-
-        <!-- Serviços -->
-        <div class="footer-section">
-          <h3>Serviços</h3>
-          <ul>
-            <li>Contratos em Geral</li>
-            <li>Recibos & Declarações</li>
-            <li>Procurações Simples</li>
-            <li>Documentos Personalizados</li>
-            <li>Atendimento Rápido por WhatsApp</li>
-          </ul>
-        </div>
-
-        <!-- Contato -->
-        <div class="footer-section">
-          <h3>Contato</h3>
-          <ul>
-            <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5563991112959">(63) 9 9111-2959</a></li>
-            <li><i class="fas fa-envelope"></i> <a href="mailto:docsexpress.brasil@gmail.com">docsexpress.brasil@gmail.com</a></li>
-            <li><i class="fas fa-clock"></i> Segunda a sábado, horário comercial</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Política + créditos -->
-      <div class="footer-bottom">
-        <p>&copy; 2025 DOCS EXPRESS BRASIL. Todos os direitos reservados. | <a href="#politica" style="color: #10b981; text-decoration: underline;">Política de Privacidade</a></p>
-      </div>
+  <div class="container footer-content">
+    <div class="footer-section">
+      <h3>DOCS EXPRESS BRASIL</h3>
+      <p>Documentos personalizados com agilidade e precisão. Entregues com segurança, clareza e atendimento direto pelo WhatsApp — tudo em conformidade com o Código Civil Brasileiro.</p>
+      <p>🔧 Estamos em constante evolução — sua experiência e feedback orientam cada melhoria que fazemos.</p>
     </div>
-  </footer>
+    <div class="footer-section">
+      <h3>Serviços</h3>
+      <ul>
+        <li>   São 30 opções de documentos</li>
+        <li>      Contratos em Geral</li>
+        <li>     Recibos & Declarações</li>
+        <li>      Procurações Simples</li>
+        <li>   Documentos Personalizados</li>
+        <li>Atendimento Rápido por WhatsApp</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contato</h3>
+      <ul>
+        <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5563991112959" target="_blank" rel="noopener noreferrer">(63) 9 9111-2959</a></li>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:docsexpress.brasil@gmail.com">docsexpress.brasil@gmail.com</a></li>
+        <li><i class="fas fa-clock"></i> Segunda a sábado, horário comercial</li>
+      </ul>
+    </div>
+    <div class="footer-section footer-legal">
+      <h3>Informação Legal</h3>
+      <p>A Docs Express Brasil elabora exclusivamente documentos personalizados, sem prestar assessoria jurídica. A responsabilidade pelas informações e utilização dos documentos é integralmente do cliente. Recomendamos consultar um advogado quando necessário.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2025 DOCS EXPRESS BRASIL. Todos os direitos reservados.</div>
+</footer>
 
-  <script src="js/script.js"></script>
+  <script>
+    // Acordeão
+    document.querySelectorAll(".accordion-header").forEach(header => {
+      header.addEventListener("click", () => {
+        const item = header.parentElement;
+        item.classList.toggle("active");
+      });
+    });
+
+    // Adiciona partículas flutuantes
+    function createParticles() {
+      const particlesContainer = document.querySelector('.floating-particles');
+      if (particlesContainer) {
+        for (let i = 0; i < 20; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+          particle.style.left = Math.random() * 100 + '%';
+          particle.style.animationDelay = Math.random() * 15 + 's';
+          particlesContainer.appendChild(particle);
+        }
+      }
+    }
+
+    // Inicializa partículas quando a página carrega
+    document.addEventListener('DOMContentLoaded', createParticles);
+  </script>
 </body>
 </html>
