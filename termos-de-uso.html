@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos de Uso | Docs Express Brasil</title>
+  <meta name="description" content="Termos de Uso da Docs Express Brasil — condições gerais para contratação de serviços de elaboração de documentos e análise contratual via WhatsApp." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="/capa-docs-express.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0a1f4e;
+      --navy-mid: #0d2b6b;
+      --teal: #0f766e;
+      --teal-light: #14b8a6;
+      --gold: #f59e0b;
+      --slate-600: #475569;
+      --slate-200: #e2e8f0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: #334155;
+      background: #f8fafc;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      background: var(--navy);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    header a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-family: 'Sora', sans-serif;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+    header a:hover { color: white; }
+    header .brand {
+      font-size: 1rem;
+      font-weight: 800;
+      color: white;
+      font-family: 'Sora', sans-serif;
+    }
+    header .brand span { color: var(--gold); }
+    .hero-pp {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, var(--teal) 100%);
+      padding: 56px 24px;
+      text-align: center;
+    }
+    .hero-pp h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 900;
+      color: white;
+      margin-bottom: 12px;
+    }
+    .hero-pp p {
+      color: rgba(255,255,255,0.75);
+      font-size: 1rem;
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+    .content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+    .intro-box {
+      background: linear-gradient(135deg, rgba(15,118,110,0.06), rgba(10,31,78,0.04));
+      border: 1px solid rgba(15,118,110,0.2);
+      border-left: 4px solid var(--teal);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      font-size: 0.92rem;
+      color: var(--slate-600);
+      line-height: 1.7;
+    }
+    .intro-box strong { color: var(--navy-mid); }
+    .section-block {
+      background: white;
+      border-radius: 14px;
+      border: 1px solid var(--slate-200);
+      padding: 28px 32px;
+      margin-bottom: 16px;
+    }
+    .section-block h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy-mid);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-block h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: var(--teal);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .section-block p {
+      font-size: 0.93rem;
+      color: var(--slate-600);
+      line-height: 1.75;
+    }
+    .section-block p + p {
+      margin-top: 10px;
+    }
+    .section-block ul {
+      margin-top: 10px;
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .section-block ul li {
+      font-size: 0.93rem;
+      color: var(--slate-600);
+      line-height: 1.65;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .section-block ul li::before {
+      content: "·";
+      color: var(--teal);
+      font-weight: 900;
+      font-size: 1.2rem;
+      line-height: 1.3;
+      flex-shrink: 0;
+    }
+    .destaque-box {
+      background: rgba(245,158,11,0.06);
+      border: 1px solid rgba(245,158,11,0.25);
+      border-left: 4px solid var(--gold);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      font-size: 0.92rem;
+      color: var(--slate-600);
+      line-height: 1.7;
+    }
+    .destaque-box strong { color: var(--navy-mid); }
+    .updated {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-top: 32px;
+    }
+    footer {
+      background: #060f24;
+      padding: 24px;
+      text-align: center;
+      color: rgba(255,255,255,0.35);
+      font-size: 0.8rem;
+    }
+    footer a {
+      color: var(--teal-light);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">← Voltar ao site</a>
+  <div class="brand">DOCS <span>EXPRESS</span> BRASIL</div>
+</header>
+
+<div class="hero-pp">
+  <h1>Termos de Uso</h1>
+  <p>Condições gerais que regem a contratação e a prestação dos serviços da Docs Express Brasil. Leia com atenção antes de utilizar nossos serviços.</p>
+</div>
+
+<div class="content">
+
+  <div class="intro-box">
+    Ao solicitar qualquer serviço da <strong>Docs Express Brasil</strong> — seja via WhatsApp, e-mail ou qualquer outro canal de atendimento — o cliente declara ter lido, compreendido e concordado com os presentes Termos de Uso em sua integralidade.
+  </div>
+
+  <div class="section-block">
+    <h2>Objeto do serviço</h2>
+    <p>A Docs Express Brasil é um serviço especializado em <strong>elaboração de documentos particulares</strong> e <strong>análise técnica de risco contratual</strong>. Atuamos na estruturação de contratos, termos, procurações, notificações e demais instrumentos particulares, personalizados conforme os dados e condições da negociação informados pelo cliente.</p>
+    <p>Nossos serviços <strong>não constituem advocacia, assessoria jurídica ou consultoria legal</strong>. Não representamos clientes em juízo, não emitimos pareceres jurídicos e não assumimos responsabilidade por desfechos em litígios já instaurados. Em situações de disputa judicial ou contencioso, recomendamos a contratação de advogado habilitado.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Responsabilidades do cliente</h2>
+    <p>Para a correta prestação do serviço, o cliente se compromete a:</p>
+    <ul>
+      <li>Fornecer informações verdadeiras, completas e atualizadas sobre as partes envolvidas e as condições da negociação;</li>
+      <li>Informar eventuais restrições, cláusulas previamente acordadas ou condições especiais relevantes para a elaboração do documento;</li>
+      <li>Revisar o documento recebido antes da aprovação e do pagamento, comunicando qualquer incorreção ou ajuste necessário;</li>
+      <li>Utilizar os documentos elaborados estritamente para as finalidades lícitas para as quais foram contratados;</li>
+      <li>Não utilizar os serviços da Docs Express Brasil para fins fraudulentos, simulação de negócios ou qualquer ato contrário à lei.</li>
+    </ul>
+    <p>A Docs Express Brasil não se responsabiliza por erros decorrentes de informações incorretas, incompletas ou omissas fornecidas pelo cliente.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Responsabilidades da Docs Express Brasil</h2>
+    <p>A Docs Express Brasil se compromete a:</p>
+    <ul>
+      <li>Elaborar os documentos com base nas informações fornecidas pelo cliente e em conformidade com a legislação civil brasileira vigente;</li>
+      <li>Garantir que as cláusulas estejam alinhadas ao Código Civil Brasileiro e, quando aplicável, à Lei do Inquilinato, ao Estatuto da Terra e demais normas específicas;</li>
+      <li>Entregar os documentos dentro do prazo informado no momento da solicitação;</li>
+      <li>Realizar ajustes no documento aprovado em casos de inconsistências decorrentes de nossa elaboração, sem custo adicional;</li>
+      <li>Tratar todas as informações recebidas com sigilo e confidencialidade, conforme nossa Política de Privacidade.</li>
+    </ul>
+  </div>
+
+  <div class="destaque-box">
+    <strong>Garantia de Aprovação Prévia:</strong> Nenhum pagamento é solicitado antes da aprovação do documento pelo cliente. O cliente recebe o documento completo para revisão e somente após confirmar sua aprovação o pagamento via PIX é realizado. Após o pagamento, o documento final em Word e PDF é entregue.
+  </div>
+
+  <div class="section-block">
+    <h2>Pagamento</h2>
+    <p>Os valores dos serviços são informados previamente e confirmados no momento da solicitação. O pagamento é realizado exclusivamente via PIX, após a aprovação do documento pelo cliente.</p>
+    <p>Não são aceitos pagamentos parciais antecipados. O valor integral é cobrado uma única vez, após a aprovação completa do documento ou do relatório de análise contratual.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Prazo de entrega</h2>
+    <p>Os prazos de entrega variam conforme o tipo de serviço contratado e a complexidade da negociação, sendo informados no início de cada atendimento. Os prazos são contados em horas úteis a partir do recebimento de todas as informações necessárias para a elaboração do documento.</p>
+    <p>Atrasos decorrentes de informações incompletas ou de demora na resposta do cliente não são de responsabilidade da Docs Express Brasil.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Cancelamento e reembolso</h2>
+    <p>O cliente pode cancelar a solicitação a qualquer momento antes da aprovação do documento, sem qualquer custo. Como o pagamento somente ocorre após a aprovação, não há cobrança em caso de desistência antes desse momento.</p>
+    <p>Após o pagamento e a entrega do documento final, não há reembolso, salvo em casos de falha comprovada na prestação do serviço atribuível exclusivamente à Docs Express Brasil.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Propriedade intelectual</h2>
+    <p>Os documentos elaborados pela Docs Express Brasil são entregues ao cliente para uso pessoal ou empresarial conforme a finalidade contratada. É vedada a revenda, redistribuição ou utilização dos documentos como modelos genéricos para terceiros sem autorização expressa.</p>
+    <p>Os modelos, estruturas e metodologia de elaboração utilizados pela Docs Express Brasil são de sua propriedade intelectual e não podem ser reproduzidos, copiados ou comercializados por terceiros.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Limitação de responsabilidade</h2>
+    <p>A Docs Express Brasil não se responsabiliza por:</p>
+    <ul>
+      <li>Desfechos de negociações, conflitos ou litígios entre as partes contratantes do documento elaborado;</li>
+      <li>Descumprimento contratual por qualquer das partes envolvidas no negócio jurídico objeto do documento;</li>
+      <li>Decisões judiciais ou administrativas que contrariem cláusulas do documento elaborado, uma vez que a validade de cláusulas específicas pode ser objeto de interpretação judicial;</li>
+      <li>Danos indiretos, lucros cessantes ou perdas decorrentes do uso ou não uso dos documentos entregues.</li>
+    </ul>
+    <p>Nossa responsabilidade limita-se à correta elaboração do documento conforme as informações fornecidas e em conformidade com a legislação vigente na data de elaboração.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Alterações nos Termos de Uso</h2>
+    <p>A Docs Express Brasil reserva-se o direito de atualizar estes Termos de Uso a qualquer momento, mediante publicação da versão atualizada nesta página. O uso continuado dos serviços após a publicação de alterações implica aceitação dos novos termos.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Foro e lei aplicável</h2>
+    <p>Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil. Para dirimir quaisquer controvérsias decorrentes deste instrumento, fica eleito o foro da Comarca de Palmas, Estado do Tocantins, com renúncia expressa a qualquer outro, por mais privilegiado que seja.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Contato</h2>
+    <p>Para dúvidas sobre estes Termos de Uso ou sobre os serviços prestados, entre em contato pelo WhatsApp oficial: <strong>(63) 9 9111-2959</strong> ou pelo e-mail <strong>docsexpress.brasil@gmail.com</strong>.</p>
+  </div>
+
+  <p class="updated">Última atualização: maio de 2026</p>
+
+</div>
+
+<footer>
+  <p>© 2026 Docs Express Brasil. Todos os direitos reservados. — <a href="index.html">Voltar ao site</a> · <a href="politica-de-privacidade.html">Política de Privacidade</a></p>
+</footer>
+
+</body>
+</html>
