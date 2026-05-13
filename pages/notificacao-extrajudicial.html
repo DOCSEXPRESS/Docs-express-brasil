@@ -258,6 +258,13 @@
     .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding: 20px 24px; text-align: center; max-width: 1060px; margin: 0 auto; font-size: 0.8rem; color: rgba(255,255,255,0.3); }
     @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
     @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+    /* BARRA LGPD */
+    .lgpd-bar { background: #030814; border-top: 1px solid rgba(255,255,255,0.08); padding: 24px; text-align: center; }
+    .lgpd-inner { max-width: 1060px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .lgpd-inner p { font-size: 0.8rem; color: rgba(255,255,255,0.4); line-height: 1.6; max-width: 800px; }
+    .lgpd-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    .lgpd-links a { color: #14b8a6; font-size: 0.85rem; font-weight: 600; text-decoration: none; transition: color 0.2s; }
+    .lgpd-links a:hover { color: white; }
   </style>
 </head>
 
@@ -666,7 +673,16 @@
       <div class="footer-col footer-legal-col">
         <h4>Informação Legal</h4>
         <p>A Docs Express Brasil elabora documentos particulares e análises técnicas de risco comercial. Nossos serviços não constituem assessoria jurídica, consultoria legal ou advocacia, sendo vedado o exercício da advocacia por não advogados, nos termos do Estatuto da OAB. Em situações de litígio, recomendamos consultar um advogado.</p>
-        <a href="/politica-de-privacidade" style="display:block;margin-top:12px;color:#14b8a6;text-decoration:underline;" target="_blank" rel="noopener noreferrer">🔒 Política de Privacidade</a>
+      </div>
+    </div>
+    <!-- BARRA LGPD -->
+    <div class="lgpd-bar">
+      <div class="lgpd-inner">
+        <div class="lgpd-links">
+          <a href="https://docsexpressbrasil.com.br/politica-de-privacidade.html">Política de Privacidade</a>
+          <a href="https://docsexpressbrasil.com.br/termos-de-uso.html">Termos de Uso</a>
+        </div>
+        <p>🔒 <strong>Proteção de Dados (LGPD):</strong> Tratamos suas informações com total confidencialidade. Os dados da sua negociação, matrículas e documentos pessoais enviados via WhatsApp são utilizados exclusivamente para a estruturação do seu contrato e protegidos por criptografia de ponta a ponta, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
       </div>
     </div>
     <div class="footer-bottom">
