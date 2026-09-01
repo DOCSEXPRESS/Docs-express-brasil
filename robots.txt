@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://docsexpressbrasil.com.br/sitemap.xml
